@@ -1,4 +1,4 @@
-/* Copyright 2017 Wunder
+/* Copyright 2015-2017 Theo Felippe
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,7 +13,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "xd75.h"
 
 // Layer shorthand
 #define _QW 0
@@ -38,6 +37,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |         |        |   FN   |  LGUI  |  LALT  | SPACE  | -      | =      | \      | SPACE  |    `   |        |        |        |        |
  * '---------------------------------------------------------------------------------------------------------------------------------------'
  */
+[_QWERTY] = {
+  { _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    _______, _______, _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______ },
+  { HPR_TAB, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    _______, _______, _______, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC },
+  { CTL_ESC, KC_A,    KC_S,    KC_D,    FN_F,    KC_G,    _______, _______, _______, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT },
+  { SFT_BSP, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    _______, _______, _______, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT },
+  { KC_LCTL, MEH_GRV, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  _______, _______, _______, SFT_SPC, RAISE,   KC_RGUI, KC_RALT, UMLAUT,  KC_RCTL }
+},
 
  [_QW] = { /* QWERTY */
   { _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    _______, _______, _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______  },

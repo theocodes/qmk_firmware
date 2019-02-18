@@ -38,7 +38,7 @@ enum planck_keycodes {
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
-#define F_FN LT(_FN, KC_F)
+#define FN_F LT(_FN, KC_F)
 
 #define ALT_THREE MT(MOD_LALT, KC_3)
 #define GUI_FOUR MT(MOD_LGUI, KC_4)
