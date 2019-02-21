@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   { HPR_TAB, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    _______, _______, _______, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC },
   { CTL_ESC, KC_A,    KC_S,    KC_D,    FN_F,    KC_G,    _______, _______, _______, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT },
   { SFT_BSP, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    _______, _______, _______, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT },
-  { KC_LCTL, MEH_GRV, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  _______, _______, _______, SFT_SPC, RAISE,   KC_RGUI, KC_RALT, UMLAUT,  KC_RCTL }
+  { KC_LCTL, MEH_GRV, KC_LALT, LOWER,   KC_LGUI, KC_SPC,  _______, _______, _______, SFT_SPC, RAISE,   _______, _______, _______, _______ }
 },
 
  [_QW] = { /* QWERTY */
